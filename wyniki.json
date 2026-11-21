@@ -1,0 +1,2333 @@
+{
+ "format": 1,
+ "season": "Sezon 2026/27",
+ "generated_at": "2026-11-21T22:59:27",
+ "published_at": "2026-11-21T22:59:27",
+ "players": [
+  {
+   "id": 1,
+   "name": "Krystian Wieteska",
+   "active": true
+  },
+  {
+   "id": 2,
+   "name": "Asia Kastelik",
+   "active": false
+  },
+  {
+   "id": 3,
+   "name": "Mateusz Gromadecki",
+   "active": true
+  },
+  {
+   "id": 4,
+   "name": "Jan Szwaba",
+   "active": true
+  },
+  {
+   "id": 5,
+   "name": "Kacper Wielechowski",
+   "active": true
+  },
+  {
+   "id": 6,
+   "name": "Adam Franciszek Wojtowicz",
+   "active": true
+  },
+  {
+   "id": 7,
+   "name": "Julian Cieślak",
+   "active": true
+  },
+  {
+   "id": 8,
+   "name": "Patryk Malec-Nagadowski",
+   "active": true
+  },
+  {
+   "id": 9,
+   "name": "Kamil Ratajczak",
+   "active": true
+  },
+  {
+   "id": 10,
+   "name": "Krzysztof Jakubiec",
+   "active": true
+  },
+  {
+   "id": 11,
+   "name": "Wojtek Bielaczyc",
+   "active": true
+  },
+  {
+   "id": 12,
+   "name": "Daniel Zakrzewski",
+   "active": false
+  }
+ ],
+ "jumpers": {
+  "22": {
+   "id": 22,
+   "name": "Antti Aalto",
+   "surname": "AALTO",
+   "given": "Antti",
+   "nsa": "FIN"
+  },
+  "3": {
+   "id": 3,
+   "name": "Clemens Aigner",
+   "surname": "AIGNER",
+   "given": "Clemens",
+   "nsa": "AUT"
+  },
+  "2": {
+   "id": 2,
+   "name": "Artti Aigro",
+   "surname": "AIGRO",
+   "given": "Artti",
+   "nsa": "EST"
+  },
+  "36": {
+   "id": 36,
+   "name": "Kevin Bickner",
+   "surname": "BICKNER",
+   "given": "Kevin",
+   "nsa": "USA"
+  },
+  "18": {
+   "id": 18,
+   "name": "Giovanni Bresadola",
+   "surname": "BRESADOLA",
+   "given": "Giovanni",
+   "nsa": "ITA"
+  },
+  "6": {
+   "id": 6,
+   "name": "Francesco Cecon",
+   "surname": "CECON",
+   "given": "Francesco",
+   "nsa": "ITA"
+  },
+  "41": {
+   "id": 41,
+   "name": "Jules Chervet",
+   "surname": "CHERVET",
+   "given": "Jules",
+   "nsa": "FRA"
+  },
+  "45": {
+   "id": 45,
+   "name": "Jason Colby",
+   "surname": "COLBY",
+   "given": "Jason",
+   "nsa": "USA"
+  },
+  "8": {
+   "id": 8,
+   "name": "Gregor Deschwanden",
+   "surname": "DESCHWANDEN",
+   "given": "Gregor",
+   "nsa": "SUI"
+  },
+  "7": {
+   "id": 7,
+   "name": "Stephan Embacher",
+   "surname": "EMBACHER",
+   "given": "Stephan",
+   "nsa": "AUT"
+  },
+  "44": {
+   "id": 44,
+   "name": "Johann Andre Forfang",
+   "surname": "FORFANG",
+   "given": "Johann Andre",
+   "nsa": "NOR"
+  },
+  "55": {
+   "id": 55,
+   "name": "Valentin Foubert",
+   "surname": "FOUBERT",
+   "given": "Valentin",
+   "nsa": "FRA"
+  },
+  "27": {
+   "id": 27,
+   "name": "Tate Frantz",
+   "surname": "FRANTZ",
+   "given": "Tate",
+   "nsa": "USA"
+  },
+  "40": {
+   "id": 40,
+   "name": "Halvor Egner Granerud",
+   "surname": "GRANERUD",
+   "given": "Halvor Egner",
+   "nsa": "NOR"
+  },
+  "59": {
+   "id": 59,
+   "name": "Adrian Thon Gundersrud",
+   "surname": "GUNDERSRUD",
+   "given": "Adrian Thon",
+   "nsa": "NOR"
+  },
+  "51": {
+   "id": 51,
+   "name": "Sandro Hauswirth",
+   "surname": "HAUSWIRTH",
+   "given": "Sandro",
+   "nsa": "SUI"
+  },
+  "43": {
+   "id": 43,
+   "name": "Jan Hoerl",
+   "surname": "HOERL",
+   "given": "Jan",
+   "nsa": "AUT"
+  },
+  "10": {
+   "id": 10,
+   "name": "Felix Hoffmann",
+   "surname": "HOFFMANN",
+   "given": "Felix",
+   "nsa": "GER"
+  },
+  "12": {
+   "id": 12,
+   "name": "Remo Imhof",
+   "surname": "IMHOF",
+   "given": "Remo",
+   "nsa": "SUI"
+  },
+  "11": {
+   "id": 11,
+   "name": "Klemens Joniak",
+   "surname": "JONIAK",
+   "given": "Klemens",
+   "nsa": "POL"
+  },
+  "60": {
+   "id": 60,
+   "name": "Hektor Kapustik",
+   "surname": "KAPUSTIK",
+   "given": "Hektor",
+   "nsa": "SVK"
+  },
+  "4": {
+   "id": 4,
+   "name": "Juri Kesseli",
+   "surname": "KESSELI",
+   "given": "Juri",
+   "nsa": "SUI"
+  },
+  "31": {
+   "id": 31,
+   "name": "Ryoyu Kobayashi",
+   "surname": "KOBAYASHI",
+   "given": "Ryoyu",
+   "nsa": "JPN"
+  },
+  "47": {
+   "id": 47,
+   "name": "Maciej Kot",
+   "surname": "KOT",
+   "given": "Maciej",
+   "nsa": "POL"
+  },
+  "48": {
+   "id": 48,
+   "name": "Roman Koudelka",
+   "surname": "KOUDELKA",
+   "given": "Roman",
+   "nsa": "CZE"
+  },
+  "32": {
+   "id": 32,
+   "name": "Stefan Kraft",
+   "surname": "KRAFT",
+   "given": "Stefan",
+   "nsa": "AUT"
+  },
+  "23": {
+   "id": 23,
+   "name": "Dawid Kubacki",
+   "surname": "KUBACKI",
+   "given": "Dawid",
+   "nsa": "POL"
+  },
+  "58": {
+   "id": 58,
+   "name": "Niko Kytosaho",
+   "surname": "KYTOSAHO",
+   "given": "Niko",
+   "nsa": "FIN"
+  },
+  "9": {
+   "id": 9,
+   "name": "Isak Andreas Langmo",
+   "surname": "LANGMO",
+   "given": "Isak Andreas",
+   "nsa": "NOR"
+  },
+  "14": {
+   "id": 14,
+   "name": "Anze Lanisek",
+   "surname": "LANISEK",
+   "given": "Anze",
+   "nsa": "SLO"
+  },
+  "25": {
+   "id": 25,
+   "name": "Marius Lindvik",
+   "surname": "LINDVIK",
+   "given": "Marius",
+   "nsa": "NOR"
+  },
+  "56": {
+   "id": 56,
+   "name": "Henry Loher",
+   "surname": "LOHER",
+   "given": "Henry",
+   "nsa": "USA"
+  },
+  "30": {
+   "id": 30,
+   "name": "Jarkko Maatta",
+   "surname": "MAATTA",
+   "given": "Jarkko",
+   "nsa": "FIN"
+  },
+  "35": {
+   "id": 35,
+   "name": "Jewhen Marusiak",
+   "surname": "MARUSIAK",
+   "given": "Jewhen",
+   "nsa": "UKR"
+  },
+  "52": {
+   "id": 52,
+   "name": "Ilya Mizernykh",
+   "surname": "MIZERNYKH",
+   "given": "Ilya",
+   "nsa": "KAZ"
+  },
+  "20": {
+   "id": 20,
+   "name": "Naoki Nakamura",
+   "surname": "NAKAMURA",
+   "given": "Naoki",
+   "nsa": "JPN"
+  },
+  "1": {
+   "id": 1,
+   "name": "Ren Nikaido",
+   "surname": "NIKAIDO",
+   "given": "Ren",
+   "nsa": "JPN"
+  },
+  "28": {
+   "id": 28,
+   "name": "Rok Oblak",
+   "surname": "OBLAK",
+   "given": "Rok",
+   "nsa": "SLO"
+  },
+  "17": {
+   "id": 17,
+   "name": "Benjamin Oestvald",
+   "surname": "OESTVALD",
+   "given": "Benjamin",
+   "nsa": "NOR"
+  },
+  "38": {
+   "id": 38,
+   "name": "Maximilian Ortner",
+   "surname": "ORTNER",
+   "given": "Maximilian",
+   "nsa": "AUT"
+  },
+  "33": {
+   "id": 33,
+   "name": "Pius Paschke",
+   "surname": "PASCHKE",
+   "given": "Pius",
+   "nsa": "GER"
+  },
+  "16": {
+   "id": 16,
+   "name": "Robin Pedersen",
+   "surname": "PEDERSEN",
+   "given": "Robin",
+   "nsa": "NOR"
+  },
+  "53": {
+   "id": 53,
+   "name": "Killian Peier",
+   "surname": "PEIER",
+   "given": "Killian",
+   "nsa": "SUI"
+  },
+  "13": {
+   "id": 13,
+   "name": "Domen Prevc",
+   "surname": "PREVC",
+   "given": "Domen",
+   "nsa": "SLO"
+  },
+  "49": {
+   "id": 49,
+   "name": "Philipp Raimund",
+   "surname": "RAIMUND",
+   "given": "Philipp",
+   "nsa": "GER"
+  },
+  "34": {
+   "id": 34,
+   "name": "Yukiya Sato",
+   "surname": "SATO",
+   "given": "Yukiya",
+   "nsa": "JPN"
+  },
+  "46": {
+   "id": 46,
+   "name": "Solve Jokerud Strand",
+   "surname": "STRAND",
+   "given": "Solve Jokerud",
+   "nsa": "NOR"
+  },
+  "50": {
+   "id": 50,
+   "name": "Kristoffer Eriksen Sundal",
+   "surname": "SUNDAL",
+   "given": "Kristoffer Eriksen",
+   "nsa": "NOR"
+  },
+  "37": {
+   "id": 37,
+   "name": "Kacper Tomasiak",
+   "surname": "TOMASIAK",
+   "given": "Kacper",
+   "nsa": "POL"
+  },
+  "19": {
+   "id": 19,
+   "name": "Daniel Tschofenig",
+   "surname": "TSCHOFENIG",
+   "given": "Daniel",
+   "nsa": "AUT"
+  },
+  "42": {
+   "id": 42,
+   "name": "Max Unglaube",
+   "surname": "UNGLAUBE",
+   "given": "Max",
+   "nsa": "GER"
+  },
+  "54": {
+   "id": 54,
+   "name": "Kaimar Vagul",
+   "surname": "VAGUL",
+   "given": "Kaimar",
+   "nsa": "EST"
+  },
+  "5": {
+   "id": 5,
+   "name": "Kasperi Valto",
+   "surname": "VALTO",
+   "given": "Kasperi",
+   "nsa": "FIN"
+  },
+  "24": {
+   "id": 24,
+   "name": "Tarik Vanwieren",
+   "surname": "VANWIEREN",
+   "given": "Tarik",
+   "nsa": "CAN"
+  },
+  "57": {
+   "id": 57,
+   "name": "Danil Vassilyev",
+   "surname": "VASSILYEV",
+   "given": "Danil",
+   "nsa": "KAZ"
+  },
+  "15": {
+   "id": 15,
+   "name": "Andreas Wellinger",
+   "surname": "WELLINGER",
+   "given": "Andreas",
+   "nsa": "GER"
+  },
+  "61": {
+   "id": 61,
+   "name": "Jakub Wolny",
+   "surname": "WOLNY",
+   "given": "Jakub",
+   "nsa": "POL"
+  },
+  "29": {
+   "id": 29,
+   "name": "Paweł Wąsek",
+   "surname": "WĄSEK",
+   "given": "Paweł",
+   "nsa": "POL"
+  },
+  "26": {
+   "id": 26,
+   "name": "Timi Zajc",
+   "surname": "ZAJC",
+   "given": "Timi",
+   "nsa": "SLO"
+  },
+  "39": {
+   "id": 39,
+   "name": "Raffael Zimmermann",
+   "surname": "ZIMMERMANN",
+   "given": "Raffael",
+   "nsa": "AUT"
+  },
+  "21": {
+   "id": 21,
+   "name": "Vladimir Zografski",
+   "surname": "ZOGRAFSKI",
+   "given": "Vladimir",
+   "nsa": "BUL"
+  }
+ },
+ "weekends": [
+  {
+   "id": 1,
+   "seq": 1,
+   "name": "Lillehamer 26/27",
+   "start_date": "2026-11-20",
+   "startlist_size": 75,
+   "comps": [
+    {
+     "id": 1,
+     "title": "Lillehamer 26/27 sobota",
+     "kind": "ind",
+     "hill": "large",
+     "date": "2026-11-21",
+     "place": "Lillehamer",
+     "codex": null,
+     "cycles": [],
+     "cancelled": false,
+     "has_results": true,
+     "counts_general": true,
+     "scoring": true,
+     "players": {
+      "1": {
+       "points": 54.0,
+       "computed_points": 54.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": "BENCH",
+       "entries": [
+        {
+         "jumper_id": 55,
+         "rank": 12,
+         "status": "OK",
+         "base": 19.0,
+         "multiplier": 1,
+         "points": 19.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 56,
+         "rank": 27,
+         "status": "OK",
+         "base": 4.0,
+         "multiplier": 1,
+         "points": 4.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 57,
+         "rank": 19,
+         "status": "OK",
+         "base": 12.0,
+         "multiplier": 2,
+         "points": 24.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 58,
+         "rank": 36,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 59,
+         "rank": 24,
+         "status": "OK",
+         "base": 7.0,
+         "multiplier": 1,
+         "points": 7.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 60,
+         "rank": null,
+         "status": "DNS",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": false
+        }
+       ]
+      },
+      "3": {
+       "points": 117.0,
+       "computed_points": 117.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": "C3",
+       "entries": [
+        {
+         "jumper_id": 49,
+         "rank": 15,
+         "status": "OK",
+         "base": 16.0,
+         "multiplier": 1,
+         "points": 16.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 50,
+         "rank": 5,
+         "status": "OK",
+         "base": 26.0,
+         "multiplier": 3,
+         "points": 78.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 51,
+         "rank": 14,
+         "status": "OK",
+         "base": 17.0,
+         "multiplier": 1,
+         "points": 17.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 54,
+         "rank": 25,
+         "status": "OK",
+         "base": 6.0,
+         "multiplier": 1,
+         "points": 6.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "4": {
+       "points": 50.0,
+       "computed_points": 50.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 43,
+         "rank": 6,
+         "status": "OK",
+         "base": 25.0,
+         "multiplier": 2,
+         "points": 50.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 44,
+         "rank": 45,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 45,
+         "rank": 40,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 47,
+         "rank": 32,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "5": {
+       "points": 89.0,
+       "computed_points": 89.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 37,
+         "rank": 46,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 2,
+         "points": 0.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 38,
+         "rank": 7,
+         "status": "OK",
+         "base": 24.0,
+         "multiplier": 1,
+         "points": 24.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 39,
+         "rank": 3,
+         "status": "OK",
+         "base": 30.0,
+         "multiplier": 1,
+         "points": 30.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 40,
+         "rank": 2,
+         "status": "OK",
+         "base": 35.0,
+         "multiplier": 1,
+         "points": 35.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "6": {
+       "points": 68.0,
+       "computed_points": 68.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 31,
+         "rank": 8,
+         "status": "OK",
+         "base": 23.0,
+         "multiplier": 2,
+         "points": 46.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 32,
+         "rank": 30,
+         "status": "OK",
+         "base": 1.0,
+         "multiplier": 1,
+         "points": 1.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 33,
+         "rank": 18,
+         "status": "OK",
+         "base": 13.0,
+         "multiplier": 1,
+         "points": 13.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 34,
+         "rank": 23,
+         "status": "OK",
+         "base": 8.0,
+         "multiplier": 1,
+         "points": 8.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "7": {
+       "points": 48.0,
+       "computed_points": 48.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 25,
+         "rank": 13,
+         "status": "OK",
+         "base": 18.0,
+         "multiplier": 2,
+         "points": 36.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 26,
+         "rank": 29,
+         "status": "OK",
+         "base": 2.0,
+         "multiplier": 1,
+         "points": 2.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 27,
+         "rank": 35,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 28,
+         "rank": 21,
+         "status": "OK",
+         "base": 10.0,
+         "multiplier": 1,
+         "points": 10.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "8": {
+       "points": 86.0,
+       "computed_points": 86.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 19,
+         "rank": 4,
+         "status": "OK",
+         "base": 27.0,
+         "multiplier": 2,
+         "points": 54.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 20,
+         "rank": 11,
+         "status": "OK",
+         "base": 20.0,
+         "multiplier": 1,
+         "points": 20.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 21,
+         "rank": 28,
+         "status": "OK",
+         "base": 3.0,
+         "multiplier": 1,
+         "points": 3.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 22,
+         "rank": 22,
+         "status": "OK",
+         "base": 9.0,
+         "multiplier": 1,
+         "points": 9.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "9": {
+       "points": 14.0,
+       "computed_points": 14.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 13,
+         "rank": 50,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 2,
+         "points": 0.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 14,
+         "rank": 17,
+         "status": "OK",
+         "base": 14.0,
+         "multiplier": 1,
+         "points": 14.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 15,
+         "rank": null,
+         "status": "DNS",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": false
+        },
+        {
+         "jumper_id": 18,
+         "rank": 34,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "10": {
+       "points": 99.0,
+       "computed_points": 99.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 7,
+         "rank": 1,
+         "status": "OK",
+         "base": 40.0,
+         "multiplier": 1,
+         "points": 40.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 8,
+         "rank": 16,
+         "status": "OK",
+         "base": 15.0,
+         "multiplier": 1,
+         "points": 15.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 9,
+         "rank": 9,
+         "status": "OK",
+         "base": 22.0,
+         "multiplier": 2,
+         "points": 44.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 10,
+         "rank": 31,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      },
+      "11": {
+       "points": 16.0,
+       "computed_points": 16.0,
+       "overridden": false,
+       "override_note": null,
+       "late": false,
+       "late_mode": null,
+       "lineup_overridden": false,
+       "lineup_note": null,
+       "has_lineup": true,
+       "warnings": [],
+       "bonus": null,
+       "entries": [
+        {
+         "jumper_id": 1,
+         "rank": 37,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 2,
+         "points": 0.0,
+         "captain": true,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 2,
+         "rank": 20,
+         "status": "OK",
+         "base": 11.0,
+         "multiplier": 1,
+         "points": 11.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 3,
+         "rank": 26,
+         "status": "OK",
+         "base": 5.0,
+         "multiplier": 1,
+         "points": 5.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        },
+        {
+         "jumper_id": 5,
+         "rank": 44,
+         "status": "OK",
+         "base": 0.0,
+         "multiplier": 1,
+         "points": 0.0,
+         "captain": false,
+         "overridden": false,
+         "in_results": true
+        }
+       ]
+      }
+     },
+     "results": [
+      {
+       "jumper_id": 7,
+       "rank": 1,
+       "status": "OK",
+       "total": 278.0,
+       "team": null,
+       "note": null,
+       "points": 40,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 40,
+       "rank": 2,
+       "status": "OK",
+       "total": 265.9,
+       "team": null,
+       "note": null,
+       "points": 35,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 39,
+       "rank": 3,
+       "status": "OK",
+       "total": 259.6,
+       "team": null,
+       "note": null,
+       "points": 30,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 19,
+       "rank": 4,
+       "status": "OK",
+       "total": 250.2,
+       "team": null,
+       "note": null,
+       "points": 27,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 50,
+       "rank": 5,
+       "status": "OK",
+       "total": 248.3,
+       "team": null,
+       "note": null,
+       "points": 26,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 43,
+       "rank": 6,
+       "status": "OK",
+       "total": 246.2,
+       "team": null,
+       "note": null,
+       "points": 25,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 38,
+       "rank": 7,
+       "status": "OK",
+       "total": 245.3,
+       "team": null,
+       "note": null,
+       "points": 24,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 31,
+       "rank": 8,
+       "status": "OK",
+       "total": 244.2,
+       "team": null,
+       "note": null,
+       "points": 23,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 9,
+       "rank": 9,
+       "status": "OK",
+       "total": 235.1,
+       "team": null,
+       "note": null,
+       "points": 22,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 12,
+       "rank": 10,
+       "status": "OK",
+       "total": 234.8,
+       "team": null,
+       "note": null,
+       "points": 21,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 20,
+       "rank": 11,
+       "status": "OK",
+       "total": 234.7,
+       "team": null,
+       "note": null,
+       "points": 20,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 55,
+       "rank": 12,
+       "status": "OK",
+       "total": 229.5,
+       "team": null,
+       "note": null,
+       "points": 19,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 25,
+       "rank": 13,
+       "status": "OK",
+       "total": 229.3,
+       "team": null,
+       "note": null,
+       "points": 18,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 51,
+       "rank": 14,
+       "status": "OK",
+       "total": 226.1,
+       "team": null,
+       "note": null,
+       "points": 17,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 49,
+       "rank": 15,
+       "status": "OK",
+       "total": 223.5,
+       "team": null,
+       "note": null,
+       "points": 16,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 8,
+       "rank": 16,
+       "status": "OK",
+       "total": 219.2,
+       "team": null,
+       "note": null,
+       "points": 15,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 14,
+       "rank": 17,
+       "status": "OK",
+       "total": 219.1,
+       "team": null,
+       "note": null,
+       "points": 14,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 33,
+       "rank": 18,
+       "status": "OK",
+       "total": 214.0,
+       "team": null,
+       "note": null,
+       "points": 13,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 57,
+       "rank": 19,
+       "status": "OK",
+       "total": 213.0,
+       "team": null,
+       "note": null,
+       "points": 12,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 2,
+       "rank": 20,
+       "status": "OK",
+       "total": 212.6,
+       "team": null,
+       "note": null,
+       "points": 11,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 28,
+       "rank": 21,
+       "status": "OK",
+       "total": 210.9,
+       "team": null,
+       "note": null,
+       "points": 10,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 22,
+       "rank": 22,
+       "status": "OK",
+       "total": 208.7,
+       "team": null,
+       "note": null,
+       "points": 9,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 34,
+       "rank": 23,
+       "status": "OK",
+       "total": 205.2,
+       "team": null,
+       "note": null,
+       "points": 8,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 59,
+       "rank": 24,
+       "status": "OK",
+       "total": 194.6,
+       "team": null,
+       "note": null,
+       "points": 7,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 54,
+       "rank": 25,
+       "status": "OK",
+       "total": 188.6,
+       "team": null,
+       "note": null,
+       "points": 6,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 3,
+       "rank": 26,
+       "status": "OK",
+       "total": 188.1,
+       "team": null,
+       "note": null,
+       "points": 5,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 56,
+       "rank": 27,
+       "status": "OK",
+       "total": 187.3,
+       "team": null,
+       "note": null,
+       "points": 4,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 21,
+       "rank": 28,
+       "status": "OK",
+       "total": 163.1,
+       "team": null,
+       "note": null,
+       "points": 3,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 26,
+       "rank": 29,
+       "status": "OK",
+       "total": 157.2,
+       "team": null,
+       "note": null,
+       "points": 2,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 32,
+       "rank": 30,
+       "status": "OK",
+       "total": 140.3,
+       "team": null,
+       "note": null,
+       "points": 1,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 10,
+       "rank": 31,
+       "status": "OK",
+       "total": 96.5,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 47,
+       "rank": 32,
+       "status": "OK",
+       "total": 94.4,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 23,
+       "rank": 33,
+       "status": "OK",
+       "total": 92.6,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 18,
+       "rank": 34,
+       "status": "OK",
+       "total": 89.8,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 27,
+       "rank": 35,
+       "status": "OK",
+       "total": 89.7,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 58,
+       "rank": 36,
+       "status": "OK",
+       "total": 87.6,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 1,
+       "rank": 37,
+       "status": "OK",
+       "total": 85.4,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 30,
+       "rank": 38,
+       "status": "OK",
+       "total": 84.0,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 4,
+       "rank": 39,
+       "status": "OK",
+       "total": 83.8,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 45,
+       "rank": 40,
+       "status": "OK",
+       "total": 79.3,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 41,
+       "rank": 41,
+       "status": "OK",
+       "total": 77.4,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 53,
+       "rank": 42,
+       "status": "OK",
+       "total": 75.1,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 6,
+       "rank": 43,
+       "status": "OK",
+       "total": 74.1,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 5,
+       "rank": 44,
+       "status": "OK",
+       "total": 71.8,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 44,
+       "rank": 45,
+       "status": "OK",
+       "total": 67.5,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 37,
+       "rank": 46,
+       "status": "OK",
+       "total": 66.8,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 61,
+       "rank": 47,
+       "status": "OK",
+       "total": 66.2,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 42,
+       "rank": 48,
+       "status": "OK",
+       "total": 65.6,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 52,
+       "rank": 49,
+       "status": "OK",
+       "total": 57.6,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      },
+      {
+       "jumper_id": 13,
+       "rank": 50,
+       "status": "OK",
+       "total": 49.7,
+       "team": null,
+       "note": null,
+       "points": 0,
+       "overridden": false,
+       "override_note": null
+      }
+     ]
+    }
+   ],
+   "picks": {
+    "1": [
+     55,
+     56,
+     57,
+     58,
+     59,
+     60
+    ],
+    "3": [
+     49,
+     50,
+     51,
+     52,
+     53,
+     54
+    ],
+    "4": [
+     43,
+     44,
+     45,
+     46,
+     47,
+     48
+    ],
+    "5": [
+     37,
+     38,
+     39,
+     40,
+     41,
+     42
+    ],
+    "6": [
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "7": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "8": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "9": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "10": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "bonuses": {
+    "1": {
+     "bonus": "BENCH",
+     "gain": 0.0,
+     "returned": false,
+     "returned_override": false
+    },
+    "3": {
+     "bonus": "C3",
+     "gain": 26.0,
+     "returned": false,
+     "returned_override": false
+    }
+   },
+   "has_results": true,
+   "counts_general": true,
+   "table": [
+    {
+     "player_id": 3,
+     "place": 1,
+     "points": 117.0,
+     "tiebreak": false,
+     "positions": [
+      5,
+      14,
+      15,
+      25
+     ]
+    },
+    {
+     "player_id": 10,
+     "place": 2,
+     "points": 99.0,
+     "tiebreak": false,
+     "positions": [
+      1,
+      9,
+      16,
+      31
+     ]
+    },
+    {
+     "player_id": 5,
+     "place": 3,
+     "points": 89.0,
+     "tiebreak": false,
+     "positions": [
+      2,
+      3,
+      7,
+      46
+     ]
+    },
+    {
+     "player_id": 8,
+     "place": 4,
+     "points": 86.0,
+     "tiebreak": false,
+     "positions": [
+      4,
+      11,
+      22,
+      28
+     ]
+    },
+    {
+     "player_id": 6,
+     "place": 5,
+     "points": 68.0,
+     "tiebreak": false,
+     "positions": [
+      8,
+      18,
+      23,
+      30
+     ]
+    },
+    {
+     "player_id": 1,
+     "place": 6,
+     "points": 54.0,
+     "tiebreak": false,
+     "positions": [
+      12,
+      19,
+      24,
+      27,
+      36
+     ]
+    },
+    {
+     "player_id": 4,
+     "place": 7,
+     "points": 50.0,
+     "tiebreak": false,
+     "positions": [
+      6,
+      32,
+      40,
+      45
+     ]
+    },
+    {
+     "player_id": 7,
+     "place": 8,
+     "points": 48.0,
+     "tiebreak": false,
+     "positions": [
+      13,
+      21,
+      29,
+      35
+     ]
+    },
+    {
+     "player_id": 11,
+     "place": 9,
+     "points": 16.0,
+     "tiebreak": false,
+     "positions": [
+      20,
+      26,
+      37,
+      44
+     ]
+    },
+    {
+     "player_id": 9,
+     "place": 10,
+     "points": 14.0,
+     "tiebreak": false,
+     "positions": [
+      17,
+      34,
+      50
+     ]
+    }
+   ],
+   "totals": {
+    "1": 54.0,
+    "3": 117.0,
+    "4": 50.0,
+    "5": 89.0,
+    "6": 68.0,
+    "7": 48.0,
+    "8": 86.0,
+    "9": 14.0,
+    "10": 99.0,
+    "11": 16.0
+   },
+   "draft_order": {
+    "order": [
+     11,
+     10,
+     9,
+     8,
+     7,
+     6,
+     5,
+     4,
+     3,
+     1
+    ],
+    "source": "ustalona ręcznie (pkt 3.7)",
+    "notes": [],
+    "rounds": 6,
+    "based_on": null
+   }
+  }
+ ],
+ "general": [
+  {
+   "player_id": 3,
+   "place": 1,
+   "points": 117.0,
+   "tiebreak": false,
+   "weekend_places": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 10,
+   "place": 2,
+   "points": 99.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 5,
+   "place": 3,
+   "points": 89.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 8,
+   "place": 4,
+   "points": 86.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 6,
+   "place": 5,
+   "points": 68.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 1,
+   "place": 6,
+   "points": 54.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 4,
+   "place": 7,
+   "points": 50.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 7,
+   "place": 8,
+   "points": 48.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "player_id": 11,
+   "place": 9,
+   "points": 16.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "player_id": 9,
+   "place": 10,
+   "points": 14.0,
+   "tiebreak": false,
+   "weekend_places": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "cycles": {},
+ "next_draft": {
+  "order": [
+   9,
+   11,
+   7,
+   4,
+   1,
+   6,
+   8,
+   5,
+   10,
+   3
+  ],
+  "source": "odwrócona klasyfikacja weekendu Lillehamer 26/27",
+  "notes": [],
+  "rounds": null,
+  "weekend_id": null,
+  "weekend_name": "kolejny weekend",
+  "snake": [
+   [
+    9,
+    11,
+    7,
+    4,
+    1,
+    6,
+    8,
+    5,
+    10,
+    3
+   ],
+   [
+    3,
+    10,
+    5,
+    8,
+    6,
+    1,
+    4,
+    7,
+    11,
+    9
+   ],
+   [
+    9,
+    11,
+    7,
+    4,
+    1,
+    6,
+    8,
+    5,
+    10,
+    3
+   ],
+   [
+    3,
+    10,
+    5,
+    8,
+    6,
+    1,
+    4,
+    7,
+    11,
+    9
+   ],
+   [
+    9,
+    11,
+    7,
+    4,
+    1,
+    6,
+    8,
+    5,
+    10,
+    3
+   ],
+   [
+    3,
+    10,
+    5,
+    8,
+    6,
+    1,
+    4,
+    7,
+    11,
+    9
+   ]
+  ],
+  "rounds_known": false
+ },
+ "bonus_usage": {
+  "1": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "used",
+    "weekend_id": 1,
+    "weekend_name": "Lillehamer 26/27",
+    "gain": 0.0
+   }
+  },
+  "3": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "used",
+    "weekend_id": 1,
+    "weekend_name": "Lillehamer 26/27",
+    "gain": 26.0
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "4": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "5": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "6": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "7": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "8": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "9": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "10": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  },
+  "11": {
+   "DC": {
+    "status": "available"
+   },
+   "C3": {
+    "status": "available"
+   },
+   "BENCH": {
+    "status": "available"
+   }
+  }
+ }
+}
