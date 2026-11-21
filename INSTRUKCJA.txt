@@ -1,0 +1,39 @@
+SKOKOWE FANTASY DRAFT – WERSJA NA TELEFON
+=========================================
+
+Strona czyta ten sam plik wyniki.json, który publikujesz z aplikacji na komputerze.
+Nic nie trzeba zmieniać w aplikacji desktopowej.
+
+JEDNORAZOWE WŁĄCZENIE (GitHub Pages)
+1. Wejdź na stronę swojego repozytorium z wynikami na GitHubie
+   (tego samego, do którego publikuje aplikacja, np. skokowefantasydraft/skokowe-fantasy-app).
+2. Kliknij „Add file” → „Upload files”.
+3. Przeciągnij do okna WSZYSTKIE pliki i foldery z tego folderu
+   (index.html, manifest.webmanifest, sw.js, ikony, logo.png, .nojekyll i folder fonts).
+   Plik INSTRUKCJA.txt możesz pominąć. Kliknij „Commit changes”.
+4. W repozytorium wejdź w Settings → Pages.
+   „Build and deployment” → Source: „Deploy from a branch”, Branch: „main”, folder: „/ (root)” → Save.
+5. Po 1–2 minutach strona będzie pod adresem:
+      https://LOGIN.github.io/NAZWA-REPO/
+   np. https://skokowefantasydraft.github.io/skokowe-fantasy-app/
+   Ten link wysyłasz graczom.
+
+NA TELEFONIE (jak aplikacja)
+- iPhone (Safari): Udostępnij → „Do ekranu początkowego”.
+- Android (Chrome): menu ⋮ → „Dodaj do ekranu głównego” / „Zainstaluj aplikację”.
+Pojawi się ikona skoczka, a strona otworzy się na pełnym ekranie.
+
+AKTUALIZACJA WYNIKÓW
+- Klikasz „Opublikuj” w aplikacji na komputerze – i tyle.
+- GitHub odświeża stronę zwykle w ciągu kilku minut. Gracze widzą nowe wyniki po otwarciu
+  strony albo po kliknięciu „Odśwież”.
+- Bez internetu strona pokazuje ostatnią pobraną wersję.
+
+UWAGI
+- Repozytorium musi być publiczne (darmowe GitHub Pages) – tak jak teraz, bo z niego
+  pobierają wyniki gracze na komputerach. Strona jest dostępna dla każdego, kto zna link.
+- Jeśli pobrałeś czcionkę League Spartan (narzedzia/pobierz_czcionki.py), możesz wrzucić też
+  plik assets/fonts/LeagueSpartan.ttf do folderu fonts w repozytorium – nagłówki będą wtedy
+  identyczne jak w aplikacji. Bez niego używana jest czcionka Poppins.
+- Gdy kiedyś podmienisz pliki strony na nowszą wersję, telefony pobiorą ją same przy
+  następnym otwarciu (z internetem).

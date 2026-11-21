@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1F3A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SFD">
+<title>Skokowe Fantasy Draft</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+@font-face { font-family: 'Poppins'; src: url('fonts/Poppins-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Poppins'; src: url('fonts/Poppins-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Poppins'; src: url('fonts/Poppins-Bold.ttf') format('truetype'); font-weight: 600 700; font-display: swap; }
+@font-face { font-family: 'League Spartan'; src: url('fonts/LeagueSpartan.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
+
+:root { --navy: #0B1F3A; --navy2: #16365F; --blue: #2F6DB5; --bg: #EEF3FA; --card: #FFFFFF;
+        --border: #D6E0EE; --muted: #5B6573; --gold: #E8B923; --silver: #B9C3CF; --bronze: #C77A3A; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; background: var(--bg); color: var(--navy); font-family: 'Poppins', system-ui, sans-serif;
+             font-size: 15px; line-height: 1.4; }
+h1, h2, h3, .t { font-family: 'League Spartan', 'Poppins', sans-serif; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: 26px; font-weight: 700; line-height: 1.1; }
+h2 { font-size: 18px; font-weight: 700; }
+h3 { font-size: 15px; font-weight: 600; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.num { font-variant-numeric: tabular-nums; }
+.strong { font-weight: 600; }
+
+header.top { position: sticky; top: 0; z-index: 5; background: var(--card); border-bottom: 1px solid var(--border);
+             padding: calc(env(safe-area-inset-top) + 8px) 16px 8px; display: flex; align-items: center; gap: 12px; }
+header.top img { width: 40px; height: 40px; border-radius: 6px; }
+header.top .meta { flex: 1; min-width: 0; }
+header.top .meta .s { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.icon-btn { border: 1px solid var(--border); background: var(--card); color: var(--navy); border-radius: 8px;
+            height: 36px; padding: 0 12px; font: inherit; font-size: 13px; }
+.icon-btn:active { background: var(--bg); }
+
+main { padding: 16px 16px calc(88px + env(safe-area-inset-bottom)); max-width: 720px; margin: 0 auto;
+       display: flex; flex-direction: column; gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+        box-shadow: 0 1px 2px rgba(11, 31, 58, 0.04); display: flex; flex-direction: column; gap: 12px; }
+.notice { border-radius: 8px; padding: 10px 12px; font-size: 13px; background: #FFF8E6; border: 1px solid #F2DFAE; }
+
+nav.bottom { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; background: var(--card);
+             border-top: 1px solid var(--border); display: flex; padding-bottom: env(safe-area-inset-bottom); }
+nav.bottom button { flex: 1; border: 0; background: none; font: inherit; font-size: 11px; color: var(--muted);
+                    padding: 10px 2px 12px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+nav.bottom button svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+nav.bottom button.active { color: var(--navy); font-weight: 600; }
+nav.bottom button.active svg { stroke: var(--blue); }
+
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { font-size: 11px; text-transform: lowercase; color: var(--muted); font-weight: 500; text-align: left;
+     padding: 6px 6px; border-bottom: 1px solid var(--border); }
+td { padding: 10px 6px; border-bottom: 1px solid var(--bg); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+.r { text-align: right; } .c { text-align: center; }
+tr.m1 td { background: rgba(232, 185, 35, 0.10); }
+tr.m2 td { background: rgba(185, 195, 207, 0.18); }
+tr.m3 td { background: rgba(199, 122, 58, 0.10); }
+.place { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 26px;
+         border-radius: 7px; font-weight: 600; font-size: 13px; }
+.place.p1 { background: var(--gold); color: #3D2E00; }
+.place.p2 { background: var(--silver); }
+.place.p3 { background: var(--bronze); color: #fff; }
+
+.tag { display: inline-block; font-size: 11px; line-height: 18px; padding: 0 7px; border-radius: 999px;
+       font-weight: 500; white-space: nowrap; vertical-align: middle; }
+.tag-dsq { color: #B42318; background: #FDECEA; }
+.tag-out { color: var(--muted); background: #EFF1F4; }
+.tag-bonus { color: #1E7B45; background: #E6F5EC; }
+.tag-capt { color: var(--blue); background: #E8F0FA; }
+.tag-fly { color: var(--navy2); background: #E3EAF5; }
+.tag-over { color: #8A5A00; background: #FFF3D6; }
+.tag-info { color: var(--navy2); background: var(--bg); }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+select, input[type=search] { font: inherit; font-size: 15px; color: var(--navy); background: var(--card);
+         border: 1px solid var(--border); border-radius: 8px; height: 42px; padding: 0 10px; max-width: 100%; }
+select { flex: 1; min-width: 0; }
+input[type=search] { width: 100%; }
+label.chk { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: 6px 12px;
+        font: inherit; font-size: 13px; white-space: nowrap; color: var(--navy); }
+.chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.stat .v { font-family: 'League Spartan', 'Poppins', sans-serif; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 11px; color: var(--muted); text-transform: lowercase; }
+
+.prow { padding: 10px 0; border-bottom: 1px solid var(--bg); display: flex; flex-direction: column; gap: 6px; }
+.prow:last-child { border-bottom: 0; }
+.prow .head { display: flex; align-items: baseline; gap: 8px; }
+.prow .head .name { flex: 1; font-weight: 600; }
+.prow .head .pts { font-weight: 700; font-variant-numeric: tabular-nums; }
+.jl { display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+.jrow { display: flex; align-items: center; gap: 6px; }
+.jrow .jn { flex: 1; min-width: 0; }
+.jrow .jr { color: var(--muted); font-size: 12px; }
+.jrow .jp { min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+.sub { font-size: 12px; color: var(--muted); }
+details summary { cursor: pointer; color: var(--blue); font-size: 14px; list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+.empty { color: var(--muted); font-size: 14px; }
+.loading { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<header class="top">
+  <img src="logo.png" alt="Skokowe Fantasy Draft">
+  <div class="meta">
+    <div class="t strong" id="season">Skokowe Fantasy Draft</div>
+    <div class="s" id="updated">Wczytywanie…</div>
+  </div>
+  <button class="icon-btn" id="refresh">Odśwież</button>
+</header>
+<main id="main"><div class="loading">Wczytywanie wyników…</div></main>
+<nav class="bottom" id="nav"></nav>
+
+<script>
+"use strict";
+// Adres pliku z wynikami. Strona leży w tym samym repozytorium co wyniki.json,
+// więc wystarczy ścieżka względna. Można tu też wpisać pełny link „raw”.
+const DATA_URL = "wyniki.json";
+const CACHE_KEY = "sfd-wyniki";
+
+const BONUS = { DC: "Podwójny Kapitan", C3: "Kapitan x3", BENCH: "Punktująca Ławka" };
+const CYCLES = { TCS: "Turniej Czterech Skoczni", RAW: "RawAir", P7: "Planica7", PSL: "PŚ w lotach",
+                 MS: "Mistrzostwa Świata", MSWL: "MŚ w lotach", IO: "Igrzyska Olimpijskie" };
+const KIND = { ind: "indywidualny", team: "drużynowy", duet: "duety", mixed: "mieszany" };
+const HILL = { normal: "normalna", large: "duża", flying: "mamucia" };
+const LAST = [[5, "5 ostatnich"], [10, "10 ostatnich"], [20, "20 ostatnich"], [0, "wszystkie"]];
+
+const ICONS = {
+  general: '<svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>',
+  weekend: '<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+  cycles: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>',
+  player: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
+  jumper: '<svg viewBox="0 0 24 24"><path d="M3 20l18-9M14 4a2 2 0 1 0 0 .1M12 8l-4 6M12 8l3 5"/></svg>',
+};
+const TABS = [["general", "Generalna"], ["weekend", "Weekend"], ["cycles", "Cykle"], ["player", "Gracze"], ["jumper", "Skoczkowie"]];
+
+let S = null;                 // dane (snapshot)
+let state = { view: "general", p: {} };
+
+// ---------------------------------------------------------------- pomocnicze
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const tag = (t, k = "info", title) => `<span class="tag tag-${k}"${title ? ` title="${esc(title)}"` : ""}>${esc(t)}</span>`;
+const fmt = v => { if (v == null) return "–"; const f = Number(v); return Number.isInteger(f) || Math.abs(f - Math.round(f)) < 1e-9 ? String(Math.round(f)) : f.toFixed(1); };
+const place = p => p == null ? '<span class="muted">–</span>' : `<span class="place${p <= 3 ? " p" + p : ""}">${p}</span>`;
+const medal = p => (p >= 1 && p <= 3) ? `m${p}` : "";
+const pname = pid => (S.players.find(p => p.id === Number(pid)) || {}).name || `#${pid}`;
+const jinfo = jid => S.jumpers[String(jid)] || { name: `#${jid}`, nsa: null };
+const jname = (jid, nsa) => { const j = jinfo(jid); return j.name + (nsa && j.nsa ? ` (${j.nsa})` : ""); };
+const comps = () => S.weekends.flatMap(w => w.comps.filter(c => c.scoring).map(c => [w, c]));
+const when = iso => iso ? iso.replace("T", " ").slice(0, 16) : "–";
+
+function compTags(c) {
+  const t = [];
+  if (c.hill === "flying") t.push(tag("loty", "fly"));
+  if (c.kind && c.kind !== "ind") t.push(tag(KIND[c.kind] || c.kind));
+  (c.cycles || []).forEach(cy => t.push(tag(cy, "info", CYCLES[cy])));
+  if (c.cancelled) t.push(tag("odwołany", "out"));
+  else if (!c.counts_general && c.kind !== "mixed") t.push(tag("poza generalną", "out"));
+  return t.join(" ");
+}
+
+function status(rank, st, inRes = true) {
+  if (st === "DSQ") return tag("DSQ", "dsq");
+  if (st === "DNS" || !inRes) return tag("brak skoku", "out");
+  if (rank == null) return tag("brak miejsca", "out");
+  if (rank > 30) return `${rank}. ` + tag("poza 30", "out");
+  return `${rank}.`;
+}
+
+function entries(list) {
+  return '<div class="jl">' + list.map(e => {
+    const capt = e.captain ? " " + tag(e.multiplier === 2 ? "K" : `K×${e.multiplier}`, "capt") : "";
+    const over = e.overridden ? " " + tag("poprawka", "over") : "";
+    return `<div class="jrow"><span class="jn">${esc(jname(e.jumper_id))}${capt}${over}</span>` +
+           `<span class="jr">${status(e.rank, e.status, e.in_results !== false)}</span><span class="jp">${fmt(e.points)}</span></div>`;
+  }).join("") + "</div>";
+}
+
+function table(headers, rows, empty = "Brak danych.") {
+  if (!rows.length) return `<div class="empty">${esc(empty)}</div>`;
+  return `<table><thead><tr>${headers.map(([h, c]) => `<th class="${c || ""}">${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map(r => `<tr class="${r.cls || ""}">${r.cells.map((c, i) => `<td class="${(headers[i] || [])[1] || ""}">${c}</td>`).join("")}</tr>`).join("") +
+    "</tbody></table>";
+}
+
+function select(id, options, value, label) {
+  return `<select id="${id}" aria-label="${esc(label)}">` +
+    options.map(([v, t]) => `<option value="${esc(v)}"${String(v) === String(value) ? " selected" : ""}>${esc(t)}</option>`).join("") + "</select>";
+}
+
+// ---------------------------------------------------------------- ekrany
+function viewGeneral() {
+  const done = S.weekends.filter(w => w.has_results);
+  let h = `<h1>Klasyfikacja generalna</h1><div class="muted small">${esc(S.season || "")} · weekendy z wynikami: ${done.length}</div>`;
+  if (!S.general.length) return h + '<div class="card"><div class="empty">Brak wyników.</div></div>';
+  const rows = S.general.map(r => {
+    const wp = r.weekend_places || [];
+    const wins = [wp[0], wp[1], wp[2]].map(x => x || 0);
+    return { cls: medal(r.place), cells: [place(r.place),
+      `<span class="strong">${esc(pname(r.player_id))}</span><div class="sub">weekendy: 1.×${wins[0]} · 2.×${wins[1]} · 3.×${wins[2]}</div>`,
+      `<span class="strong">${fmt(r.points)}</span>`] };
+  });
+  h += `<div class="card">${table([["", "c"], ["gracz"], ["pkt", "r"]], rows)}
+        <div class="muted small">Remis rozstrzyga liczba wygranych weekendów, potem drugich, trzecich miejsc (pkt 2.6).</div></div>`;
+  h += draftCard();
+  return h;
+}
+
+function draftCard() {
+  const nd = S.next_draft;
+  if (!nd || !nd.order || !nd.order.length) return "";
+  const n = nd.order.length;
+  const snake = nd.snake || [];
+  const list = nd.order.map((pid, i) => ({ cells: [`${i + 1}.`, esc(pname(pid))] }));
+  const full = nd.order.map(pid => ({ cells: [esc(pname(pid))].concat(snake.map((rnd, r) => `${r * n + rnd.indexOf(pid) + 1}`)) }));
+  return `<div class="card"><h2>Kolejność draftu – ${esc(nd.weekend_name || "kolejny weekend")}</h2>
+    <div class="muted small">Podstawa: ${esc(nd.source)}</div>
+    ${(nd.notes || []).map(x => `<div class="notice">${esc(x)}</div>`).join("")}
+    ${table([["wybór", "c"], ["gracz"]], list)}
+    <details><summary>Pełny snake draft (numery wyborów w rundach)</summary>
+      <div style="overflow-x:auto;margin-top:8px">${table([["gracz"]].concat(snake.map((_, i) => [`r${i + 1}`, "c"])), full)}</div>
+    </details></div>`;
+}
+
+function viewWeekend() {
+  const ws = S.weekends;
+  let h = "<h1>Wyniki weekendu</h1>";
+  if (!ws.length) return h + '<div class="card"><div class="empty">Nie ma jeszcze żadnego weekendu.</div></div>';
+  const withRes = ws.filter(w => w.has_results);
+  const def = (withRes[withRes.length - 1] || ws[ws.length - 1]).id;
+  const wid = ws.some(w => w.id === Number(state.p.w)) ? Number(state.p.w) : def;
+  const w = ws.find(x => x.id === wid);
+  h += `<div class="controls">${select("selW", ws.map(x => [x.id, x.name + (x.has_results ? "" : " (bez wyników)")]), wid, "Weekend")}</div>`;
+  const scoring = w.comps.filter(c => c.scoring);
+  const rows = w.table.map(r => {
+    const pid = String(r.player_id);
+    const b = w.bonuses[pid];
+    let bt = "";
+    if (b) bt = b.returned ? tag(`${BONUS[b.bonus] || b.bonus} – zwrócony`, "out") : tag(BONUS[b.bonus] || b.bonus, "bonus");
+    const per = scoring.map(c => { const pc = c.players[pid]; return `${esc(short(c.title))} ${pc ? fmt(pc.points) : "–"}`; }).join(" · ");
+    return { cls: w.has_results ? medal(r.place) : "", cells: [w.has_results ? place(r.place) : "–",
+      `<span class="strong">${esc(pname(pid))}</span>${bt ? " " + bt : ""}${per ? `<div class="sub">${per}</div>` : ""}`,
+      `<span class="strong">${fmt(r.points)}</span>`] };
+  });
+  h += `<div class="card"><h2>Klasyfikacja – ${esc(w.name)}</h2>${w.has_results ? "" : '<div class="empty">Brak wyników konkursów.</div>'}
+        ${table([["", "c"], ["gracz"], ["pkt", "r"]], rows)}</div>`;
+  for (const c of w.comps) h += compCard(c);
+  return h;
+}
+
+function short(title) {
+  const t = String(title || "konkurs");
+  const parts = t.split(/\s[–-]\s/);
+  return parts[parts.length - 1];
+}
+
+function compCard(c) {
+  const meta = [c.date, c.place, HILL[c.hill]].filter(Boolean).join(" · ");
+  let h = `<div class="card"><div><h2>${esc(c.title || "Konkurs")}</h2><div class="sub">${esc(meta)}</div></div><div class="tags">${compTags(c)}</div>`;
+  if (!c.scoring) return h + `<div class="empty">${c.cancelled ? "Konkurs odwołany." : "Brak wyników."}</div></div>`;
+  const list = Object.entries(c.players).sort((a, b) => b[1].points - a[1].points);
+  h += "<div>" + list.map(([pid, pc]) => {
+    const t = [];
+    if (pc.late) t.push(tag("skład automatyczny", "out", pc.late_mode));
+    if (pc.lineup_overridden) t.push(tag("skład poprawiony", "over"));
+    if (pc.bonus) t.push(tag(BONUS[pc.bonus] || pc.bonus, "bonus"));
+    if (!pc.has_lineup) t.push(tag("brak składu", "out"));
+    if (pc.overridden) t.push(tag(`poprawka (wyliczono ${fmt(pc.computed_points)})`, "over"));
+    return `<div class="prow"><div class="head"><span class="name">${esc(pname(pid))}</span><span class="pts">${fmt(pc.points)}</span></div>
+      ${t.length ? `<div class="tags">${t.join("")}</div>` : ""}${entries(pc.entries)}</div>`;
+  }).join("") + "</div></div>";
+  return h;
+}
+
+function viewCycles() {
+  let h = "<h1>Mniejsze cykle</h1>";
+  const avail = Object.keys(CYCLES).filter(k => S.cycles && S.cycles[k]);
+  if (!avail.length) return h + '<div class="card"><div class="empty">Żaden konkurs nie został jeszcze przypisany do cyklu.</div></div>';
+  const cur = avail.includes(state.p.c) ? state.p.c : avail[0];
+  h += `<div class="chips">${avail.map(k => `<button class="chip${k === cur ? " on" : ""}" data-cycle="${k}">${esc(CYCLES[k])}</button>`).join("")}</div>`;
+  const cc = comps().filter(([, c]) => (c.cycles || []).includes(cur));
+  const rows = S.cycles[cur].map(r => {
+    const pid = String(r.player_id);
+    const per = cc.map(([, c]) => { const pc = c.players[pid]; return pc ? fmt(pc.points) : "–"; }).join(" · ");
+    return { cls: medal(r.place), cells: [place(r.place), `<span class="strong">${esc(pname(pid))}</span><div class="sub">${per}</div>`,
+      `<span class="strong">${fmt(r.points)}</span>`] };
+  });
+  h += `<div class="card"><h2>${esc(CYCLES[cur])}</h2><div class="sub">Konkursy: ${cc.map(([, c]) => esc(c.title)).join(" · ")}</div>
+        ${table([["", "c"], ["gracz"], ["pkt", "r"]], rows)}</div>`;
+  return h;
+}
+
+function viewPlayer() {
+  let h = "<h1>Gracze</h1>";
+  if (!S.players.length) return h + '<div class="card"><div class="empty">Brak graczy.</div></div>';
+  const pid = S.players.some(p => p.id === Number(state.p.pl)) ? Number(state.p.pl) : S.players[0].id;
+  const last = state.p.n != null ? Number(state.p.n) : 10;
+  const fly = !!state.p.f;
+  const spid = String(pid);
+  h += `<div class="controls">${select("selP", S.players.map(p => [p.id, p.name]), pid, "Gracz")}</div>
+        <div class="controls">${select("selN", LAST, last, "Konkursy")}<label class="chk"><input type="checkbox" id="chkF"${fly ? " checked" : ""}> tylko loty</label></div>`;
+  const gen = S.general.find(r => r.player_id === pid);
+  const wpl = S.weekends.filter(w => w.has_results).map(w => [w, (w.table.find(r => r.player_id === pid) || {}).place]);
+  const hist = comps().map(([w, c]) => [w, c, c.players[spid]]).filter(x => x[2]);
+  const pts = hist.map(x => x[2].points);
+  const stats = [["miejsce w generalnej", gen ? gen.place : "–"], ["punkty", gen ? fmt(gen.points) : "–"],
+    ["wygrane weekendy", wpl.filter(x => x[1] === 1).length], ["średnio na konkurs", pts.length ? fmt(pts.reduce((a, b) => a + b, 0) / pts.length) : "–"]];
+  h += `<div class="stats">${stats.map(([k, v]) => `<div class="stat"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`).join("")}</div>`;
+  const usage = (S.bonus_usage || {})[spid] || {};
+  h += `<div class="card"><h3>Bonusy</h3><div class="tags">${Object.entries(BONUS).map(([code, label]) => {
+    const u = usage[code] || { status: "available" };
+    if (u.status === "used") return tag(`${label}: wykorzystany (${u.weekend_name})`, "out");
+    if (u.status === "active") return tag(`${label}: aktywny (${u.weekend_name})`, "bonus");
+    if (u.status === "returned") return tag(`${label}: zwrócony – dostępny`, "bonus");
+    return tag(`${label}: dostępny`, "bonus");
+  }).join("")}</div></div>`;
+  if (wpl.length) h += `<div class="card"><h3>Miejsca w weekendach</h3>${table([["weekend"], ["miejsce", "c"], ["pkt", "r"]],
+    wpl.map(([w, p]) => ({ cls: medal(p), cells: [esc(w.name), place(p), fmt(w.totals[spid])] })))}</div>`;
+  let items = hist.filter(x => !fly || x[1].hill === "flying").reverse();
+  if (last) items = items.slice(0, last);
+  h += `<div class="card"><h3>Historia występów</h3>${items.length ? items.map(([w, c, pc]) =>
+    `<div class="prow"><div class="head"><span class="name">${esc(c.title)}</span><span class="pts">${fmt(pc.points)}</span></div>
+     <div class="sub">${esc(c.date || "")} · ${esc(w.name)}</div><div class="tags">${compTags(c)}</div>${entries(pc.entries)}</div>`).join("")
+    : '<div class="empty">Brak występów w wybranym zakresie.</div>'}</div>`;
+  return h;
+}
+
+function viewJumper() {
+  let h = "<h1>Skoczkowie</h1>";
+  const cs = comps();
+  const seen = new Set();
+  cs.forEach(([, c]) => (c.results || []).forEach(r => seen.add(r.jumper_id)));
+  S.weekends.forEach(w => Object.values(w.picks || {}).forEach(l => l.forEach(j => seen.add(j))));
+  if (!seen.size) return h + '<div class="card"><div class="empty">Brak danych o skoczkach.</div></div>';
+  const opts = jumperOptions("");
+  const filtered = jumperOptions(state.p.q || "");
+  const list = filtered.length ? filtered : opts;
+  const jid = list.some(o => o[0] === Number(state.p.j)) ? Number(state.p.j) : list[0][0];
+  const last = state.p.n != null ? Number(state.p.n) : 10;
+  const fly = !!state.p.f;
+  h += `<input type="search" id="q" placeholder="Szukaj skoczka…" value="${esc(state.p.q || "")}">
+        <div class="controls">${select("selJ", list, jid, "Skoczek")}</div>
+        <div class="controls">${select("selN", LAST, last, "Konkursy")}<label class="chk"><input type="checkbox" id="chkF"${fly ? " checked" : ""}> tylko loty</label></div>`;
+  let rows = [];
+  for (const [w, c] of cs) {
+    if (fly && c.hill !== "flying") continue;
+    const r = (c.results || []).find(x => x.jumper_id === jid);
+    const owner = Object.entries(w.picks || {}).find(([, l]) => l.includes(jid));
+    if (!r && !owner) continue;
+    let e = null;
+    if (owner && c.players[owner[0]]) e = c.players[owner[0]].entries.find(x => x.jumper_id === jid) || null;
+    rows.push([w, c, r, owner ? owner[0] : null, e]);
+  }
+  rows.reverse();
+  if (last) rows = rows.slice(0, last);
+  const ranks = rows.map(x => x[2]).filter(r => r && r.status === "OK" && r.rank).map(r => r.rank);
+  const stats = [["konkursy", rows.length], ["średnie miejsce", ranks.length ? (ranks.reduce((a, b) => a + b, 0) / ranks.length).toFixed(1) : "–"],
+    ["najlepsze miejsce", ranks.length ? Math.min(...ranks) : "–"], ["top 10", ranks.filter(x => x <= 10).length]];
+  h += `<div class="stats">${stats.map(([k, v]) => `<div class="stat"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`).join("")}</div>`;
+  h += `<div class="card">${rows.length ? rows.map(([w, c, r, owner, e]) => {
+    const res = r ? status(r.rank, r.status) + (r.overridden ? " " + tag("poprawka", "over") : "") : tag("brak w wynikach", "out");
+    let who = owner ? `w drafcie: <span class="strong">${esc(pname(owner))}</span>` : "poza draftem";
+    if (e) who += " · " + (e.captain ? tag("kapitan", "capt") : "w składzie") + ` → ${fmt(e.points)} pkt`;
+    else if (owner) who += " · poza składem";
+    return `<div class="prow"><div class="head"><span class="name">${esc(c.title)}</span><span class="pts">${r ? fmt(r.points) : "–"}</span></div>
+      <div class="sub">${esc(c.date || "")} · miejsce: ${res}</div><div class="tags">${compTags(c)}</div><div class="sub">${who}</div></div>`;
+  }).join("") : '<div class="empty">Brak występów w wybranym zakresie.</div>'}</div>`;
+  return h;
+}
+
+const fold = t => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\u0142/g, "l");
+
+function jumperOptions(query) {
+  const seen = new Set();
+  comps().forEach(([, c]) => (c.results || []).forEach(r => seen.add(r.jumper_id)));
+  S.weekends.forEach(w => Object.values(w.picks || {}).forEach(l => l.forEach(j => seen.add(j))));
+  const q = fold(query || "");
+  return [...seen].map(j => [j, jname(j, true)]).filter(o => !q || fold(o[1]).includes(q))
+    .sort((a, b) => a[1].localeCompare(b[1], "pl"));
+}
+
+const VIEWS = { general: viewGeneral, weekend: viewWeekend, cycles: viewCycles, player: viewPlayer, jumper: viewJumper };
+
+// ---------------------------------------------------------------- nawigacja
+function go(view, p = {}, push = true) {
+  state = { view, p };
+  if (push) history.pushState(state, "", "#" + view);
+  render();
+  window.scrollTo(0, 0);
+}
+window.addEventListener("popstate", e => { if (e.state) { state = e.state; render(); } });
+
+function render() {
+  document.getElementById("nav").innerHTML = TABS.map(([k, t]) =>
+    `<button class="${state.view === k ? "active" : ""}" data-tab="${k}">${ICONS[k]}<span>${t}</span></button>`).join("");
+  const main = document.getElementById("main");
+  if (!S) { main.innerHTML = '<div class="card"><div class="empty">Brak danych. Sprawdź połączenie z internetem i kliknij „Odśwież”.</div></div>'; return; }
+  try { main.innerHTML = (VIEWS[state.view] || viewGeneral)(); }
+  catch (err) { console.error(err); main.innerHTML = `<div class="card"><div class="notice">Nie udało się wyświetlić ekranu: ${esc(err.message)}</div></div>`; }
+  bind();
+}
+
+function bind() {
+  const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
+  on("selW", "change", e => go("weekend", { w: e.target.value }, false));
+  on("selP", "change", e => go("player", { ...state.p, pl: e.target.value }, false));
+  on("selJ", "change", e => { if (e.target.value) go("jumper", { ...state.p, j: e.target.value }, false); });
+  on("selN", "change", e => go(state.view, { ...state.p, n: e.target.value }, false));
+  on("chkF", "change", e => go(state.view, { ...state.p, f: e.target.checked }, false));
+  on("q", "input", e => {
+    // filtrujemy tylko listę wyboru – bez przerysowania ekranu, żeby nie zamykać klawiatury
+    state.p = { ...state.p, q: e.target.value };
+    const sel = document.getElementById("selJ");
+    const found = jumperOptions(e.target.value);
+    sel.innerHTML = `<option value="">${found.length ? `Wybierz (${found.length})` : "Brak wyników"}</option>` +
+      found.map(([v, t]) => `<option value="${v}">${esc(t)}</option>`).join("");
+  });
+  document.querySelectorAll("[data-cycle]").forEach(b => b.addEventListener("click", () => go("cycles", { c: b.dataset.cycle }, false)));
+}
+document.getElementById("nav").addEventListener("click", e => {
+  const b = e.target.closest("[data-tab]");
+  if (b) go(b.dataset.tab);
+});
+
+// ---------------------------------------------------------------- dane
+function setHeader(note) {
+  document.getElementById("season").textContent = (S && S.season) || "Skokowe Fantasy Draft";
+  document.getElementById("updated").textContent = S ? `Aktualizacja: ${when(S.published_at)}${note ? " · " + note : ""}` : (note || "");
+}
+
+async function load(manual = false) {
+  const btn = document.getElementById("refresh");
+  btn.disabled = true; btn.textContent = "…";
+  try {
+    const sep = DATA_URL.includes("?") ? "&" : "?";
+    const r = await fetch(DATA_URL + sep + "t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status === 404 ? "nie opublikowano jeszcze wyników" : "HTTP " + r.status);
+    S = await r.json();
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify(S)); } catch (e) { /* brak miejsca lub tryb prywatny */ }
+    setHeader(manual ? "odświeżono" : "");
+  } catch (err) {
+    if (!S) { try { S = JSON.parse(localStorage.getItem(CACHE_KEY) || "null"); } catch (e) { S = null; } }
+    setHeader(S ? "offline – ostatnia pobrana wersja" : "Nie udało się pobrać wyników: " + err.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "Odśwież";
+    render();
+  }
+}
+document.getElementById("refresh").addEventListener("click", () => load(true));
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && S) load(); });
+
+const startView = (location.hash || "").slice(1);
+state = { view: VIEWS[startView] ? startView : "general", p: {} };
+history.replaceState(state, "", "#" + state.view);
+try { S = JSON.parse(localStorage.getItem(CACHE_KEY) || "null"); } catch (e) { S = null; }
+if (S) { setHeader("wczytywanie nowej wersji…"); render(); }
+load();
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+</script>
+</body>
+</html>

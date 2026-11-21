@@ -1,0 +1,16 @@
+{
+  "name": "Skokowe Fantasy Draft",
+  "short_name": "SFD",
+  "description": "Wyniki ligi Skokowe Fantasy Draft",
+  "lang": "pl",
+  "start_url": "./#general",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EEF3FA",
+  "theme_color": "#0B1F3A",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
