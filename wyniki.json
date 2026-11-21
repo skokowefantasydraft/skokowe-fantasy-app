@@ -1,18 +1,13 @@
 {
  "format": 1,
  "season": "Sezon 2026/27",
- "generated_at": "2026-11-21T22:59:27",
- "published_at": "2026-11-21T22:59:27",
+ "generated_at": "2026-11-21T23:01:04",
+ "published_at": "2026-11-21T23:01:04",
  "players": [
   {
    "id": 1,
    "name": "Krystian Wieteska",
    "active": true
-  },
-  {
-   "id": 2,
-   "name": "Asia Kastelik",
-   "active": false
   },
   {
    "id": 3,
@@ -58,11 +53,6 @@
    "id": 11,
    "name": "Wojtek Bielaczyc",
    "active": true
-  },
-  {
-   "id": 12,
-   "name": "Daniel Zakrzewski",
-   "active": false
   }
  ],
  "jumpers": {
