@@ -1,8 +1,8 @@
 {
  "format": 1,
  "season": "Sezon 2026/27",
- "generated_at": "2026-11-21T23:01:04",
- "published_at": "2026-11-21T23:01:04",
+ "generated_at": "2026-11-21T23:02:35",
+ "published_at": "2026-11-21T23:02:35",
  "players": [
   {
    "id": 1,
@@ -1671,6 +1671,22 @@
        "override_note": null
       }
      ]
+    },
+    {
+     "id": 2,
+     "title": "Lillehamer 26/27 niedziela",
+     "kind": "ind",
+     "hill": "normal",
+     "date": "2026-11-22",
+     "place": "Lillehamer",
+     "codex": null,
+     "cycles": [],
+     "cancelled": false,
+     "has_results": false,
+     "counts_general": true,
+     "scoring": false,
+     "players": {},
+     "results": []
     }
    ],
    "picks": {
