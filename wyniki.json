@@ -1,8 +1,8 @@
 {
  "format": 1,
  "season": "Sezon 2026/27",
- "generated_at": "2026-11-22T16:03:36",
- "published_at": "2026-11-22T16:03:36",
+ "generated_at": "2026-11-22T16:04:49",
+ "published_at": "2026-11-22T16:04:49",
  "players": [
   {
    "id": 1,
@@ -1939,6 +1939,120 @@
     "rounds": 6,
     "based_on": null
    }
+  },
+  {
+   "id": 2,
+   "seq": 2,
+   "name": "Ruka 26/27",
+   "start_date": "2026-11-28",
+   "startlist_size": null,
+   "comps": [],
+   "picks": {},
+   "bonuses": {},
+   "has_results": false,
+   "counts_general": false,
+   "table": [
+    {
+     "player_id": 1,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 3,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 4,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 5,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 6,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 7,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 8,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 9,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 10,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    },
+    {
+     "player_id": 11,
+     "place": 1,
+     "points": 0.0,
+     "tiebreak": true,
+     "positions": []
+    }
+   ],
+   "totals": {
+    "1": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "9": 0.0,
+    "10": 0.0,
+    "11": 0.0
+   },
+   "draft_order": {
+    "order": [
+     9,
+     11,
+     7,
+     4,
+     1,
+     6,
+     8,
+     5,
+     10,
+     3
+    ],
+    "source": "odwrócona klasyfikacja weekendu Lillehamer 26/27",
+    "notes": [],
+    "rounds": null,
+    "based_on": 1
+   }
   }
  ],
  "general": [
@@ -2140,8 +2254,9 @@
   "source": "odwrócona klasyfikacja weekendu Lillehamer 26/27",
   "notes": [],
   "rounds": null,
-  "weekend_id": null,
-  "weekend_name": "kolejny weekend",
+  "based_on": 1,
+  "weekend_id": 2,
+  "weekend_name": "Ruka 26/27",
   "snake": [
    [
     9,
