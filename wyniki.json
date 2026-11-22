@@ -1,8 +1,8 @@
 {
  "format": 1,
  "season": "Sezon 2026/27",
- "generated_at": "2026-11-21T23:02:35",
- "published_at": "2026-11-21T23:02:35",
+ "generated_at": "2026-11-22T16:03:36",
+ "published_at": "2026-11-22T16:03:36",
  "players": [
   {
    "id": 1,
@@ -1776,13 +1776,13 @@
      "bonus": "BENCH",
      "gain": 0.0,
      "returned": false,
-     "returned_override": false
+     "returned_override": true
     },
     "3": {
      "bonus": "C3",
      "gain": 26.0,
      "returned": false,
-     "returned_override": false
+     "returned_override": true
     }
    },
    "has_results": true,
